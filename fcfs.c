@@ -50,21 +50,18 @@ int main() {
     }
     
     // Output in the exact format expected by the tests
-    printf("Waiting Time:");
+    printf("Waiting Time:\n");
     for (int i = 0; i < n; i++) {
-    printf(" %s %d", p[i].pid, p[i].waiting);
+        printf("%s %d\n", p[i].pid, p[i].waiting);
     }
-    printf("\n");
     
-   printf("Turnaround Time:");
+    printf("Turnaround Time:\n");
     for (int i = 0; i < n; i++) {
-    printf(" %s %d", p[i].pid, p[i].turnaround);
+        printf("%s %d\n", p[i].pid, p[i].turnaround);
     }
-    printf("\n");
     
     printf("Average Waiting Time: %.2f\n", total_wt / n);
-    printf("Average Turnaround Time: %.2f\n", total_tat / n);
+    printf("Average Turnaround Time: %.2f", total_tat / n);
     
     return 0;
-
 }
